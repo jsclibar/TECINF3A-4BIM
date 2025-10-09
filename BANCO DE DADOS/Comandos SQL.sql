@@ -5,15 +5,19 @@ use escola_abc;
 
 /* cria a tabela aluno dentro do banco de dados */
 
-create table aluno(
-	sexo char(1),
-    idade int,
-    data_inscricao_curso date,
-    telefone varchar(20),
-    valor_pago_curso float(10,2),
-    ativo_sn int,
-    endereco text,
-    nome varchar(25));
+/* brModelo: */
+
+CREATE TABLE ALUNO (
+    idade,
+    endereco,
+    sexo,
+    telefone,
+    nome,
+    data_inscricao_curso,
+    valor_pago_curso,
+    ativo_sn,
+    id_aluno int autoincrement PRIMARY KEY
+);
 
 show tables; /* exibe as tabelas existentes no banco de dados */
 drop table aluno; /* remove a tabela aluno */
