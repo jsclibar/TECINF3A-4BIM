@@ -7,15 +7,16 @@ use escola_abc;
 
 /* brModelo: */
 
+
 CREATE TABLE ALUNO (
-    idade,
-    endereco,
-    sexo,
-    telefone,
-    nome,
-    data_inscricao_curso,
-    valor_pago_curso,
-    ativo_sn,
+    idade int,
+    endereco text,
+    sexo char(1),
+    telefone varchar(25),
+    nome varchar(50),
+    data_inscricao_curso date,
+    valor_pago_curso float(10,2),
+    ativo_sn int,
     id_aluno int autoincrement PRIMARY KEY
 );
 
