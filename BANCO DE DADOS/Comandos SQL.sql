@@ -17,7 +17,7 @@ CREATE TABLE ALUNO (
     data_inscricao_curso date,
     valor_pago_curso float(10,2),
     ativo_sn int,
-    id_aluno int autoincrement PRIMARY KEY
+    id_aluno int AUTO_INCREMENT  PRIMARY KEY
 );
 
 show tables; /* exibe as tabelas existentes no banco de dados */
