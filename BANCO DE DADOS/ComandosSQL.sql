@@ -84,7 +84,6 @@ update aluno set telefone =  '11 8888-4444' where telefone = '11 7777-7777';
 /* deletando registros */
 
 delete from aluno where ativo_sn = 0;
-delete from aluno where ativo_sn = 0;
 delete from aluno where idade in (30, 29);
 delete from aluno where idade in (30, 29) or sexo = 'F';
 
