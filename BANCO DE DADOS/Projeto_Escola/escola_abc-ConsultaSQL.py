@@ -14,7 +14,7 @@ def consultar_tabela(conexao, sql, titulo):
     else:
         # Traz os nomes e tipos das colunas retornadas
         descricao_colunas = cursor.description
-        colunas = []  # Cria uma lista vazia para guardar os nome
+        colunas = []  # Cria uma lista vazia para guardar os nomes
 
         for desc in descricao_colunas:  # Percorre cada coluna descrita
             # O primeiro item da tupla é o nome da coluna
