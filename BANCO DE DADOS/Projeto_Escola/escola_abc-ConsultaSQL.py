@@ -1,3 +1,5 @@
+# Recomendado a criação de um ambiente virtual para só depois instalar os pacotes abaixo:
+
 # Via pip, instale os seguintes pacotes:
 # pip install mysql-connector-python
 # pip install pandas
