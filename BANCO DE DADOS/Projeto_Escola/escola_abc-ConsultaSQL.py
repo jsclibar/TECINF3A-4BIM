@@ -1,3 +1,7 @@
+# Via pip, instale os seguintes pacotes:
+# pip install mysql-connector-python
+# pip install pandas
+
 import mysql.connector  # Biblioteca para conectar ao banco MySQL
 from mysql.connector import Error  # Classe usada para tratar erros do MySQL
 import pandas as pd  # Biblioteca para manipular e exibir dados em formato de tabela
