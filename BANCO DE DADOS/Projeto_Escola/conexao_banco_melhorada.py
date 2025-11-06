@@ -15,7 +15,7 @@ try:
 except Error as e:
     print(f"Erro ao conectar: {e}")
 
-finally:  # O finally garante que a conexão será fechada mesmo se ocorrer erro
+finally:
     if 'conexao' in locals() and conexao.is_connected():
         conexao.close()
         print("Conexão encerrada com o banco de dados.")
