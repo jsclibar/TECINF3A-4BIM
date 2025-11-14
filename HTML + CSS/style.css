@@ -1,153 +1,180 @@
+/* Importa a fonte "Cabin" do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
+/* Reset básico para todos os elementos */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0;                 /* Remove a margem padrão */
+    padding: 0;                /* Remove o padding padrão */
+    box-sizing: border-box;    /* Inclui borda e padding no cálculo de largura/altura */
 }
 
+/* Estilo base da página */
 body {
-    background-color: #F4F0EA;
-    color: #798252;
-    font-family: "Cabin", sans-serif;
-    font-weight: 400;
+    background-color: #F4F0EA;        /* Cor de fundo em tom bege claro */
+    color: #798252;                   /* Cor padrão do texto (verde amarronzado) */
+    font-family: "Cabin", sans-serif; /* Fonte principal da página */
+    font-weight: 400;                 /* Peso de fonte padrão (normal) */
 }
 
+/* Cabeçalho do site */
 header {
-    padding: 2rem;
-    background-color: #331F19;
-    text-align: center;
+    padding: 2rem;            /* Espaçamento interno do header */
+    background-color: #331F19;/* Fundo marrom escuro */
+    text-align: center;       /* Centraliza o conteúdo do cabeçalho */
 }
 
+/* Conteúdo principal */
 main {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    padding: 2rem;            /* Espaçamento interno ao redor de todo o conteúdo */
+    display: flex;            /* Usa flexbox para organizar os elementos filhos */
+    flex-direction: column;   /* Organiza os elementos em coluna */
+    gap: 1.5rem;              /* Espaço entre os elementos dentro do main */
 }
 
+/* Seções internas do main */
 section {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    display: flex;            /* Cada seção também é um container flex */
+    flex-direction: column;   /* Elementos da seção em coluna */
+    gap: 1rem;                /* Espaço entre os elementos da seção */
 }
 
+/* Títulos de segundo nível */
 h2 {
-    color: #331F19;
-    font-size: 1.2rem;
+    color: #331F19;           /* Cor do texto dos títulos */
+    font-size: 1.2rem;        /* Tamanho de fonte um pouco maior que o normal */
 }
 
+/* Inputs do tipo radio e checkbox */
 input[type="radio"], input[type="checkbox"] {
-    accent-color: #CCD595;
+    accent-color: #CCD595;    /* Cor de destaque dos inputs nativos (marcação) */
 }
 
+/* Inputs de texto, senha, data e e-mail */
 input[type="text"], input[type="password"], input[type="date"], input[type="email"]{
-    width: 100%;
-    padding: 0.6rem;
-    border: 2px solid #CCD595;
-    outline: none;
-    border-radius: 5px;
-    background-color: transparent;
+    width: 100%;              /* O input ocupa toda a largura disponível do container pai */
+    padding: 0.6rem;          /* Espaço interno para o texto */
+    border: 2px solid #CCD595;/* Borda visível em verde claro */
+    outline: none;            /* Remove contorno padrão ao focar */
+    border-radius: 5px;       /* Cantos levemente arredondados */
+    background-color: transparent; /* Fundo transparente, deixando aparecer a cor do body */
 }
 
+/* Estilo do texto de placeholder dos inputs */
 input::placeholder {
-    color: #CBBBA7;
+    color: #CBBBA7;           /* Cor mais clara para o placeholder */
 }
 
+/* Estilo do elemento select */
 select {
-    cursor: pointer;
-    background-color: #CCD595;
-    color: #331F19;
-    border-radius: 5px;
-    border: none;
-    outline: none;
+    cursor: pointer;          /* Cursor de mãozinha ao passar por cima */
+    background-color: #CCD595;/* Fundo verde claro */
+    color: #331F19;           /* Cor do texto do select */
+    border-radius: 5px;       /* Cantos arredondados */
+    border: none;             /* Remove borda padrão */
+    outline: none;            /* Remove contorno padrão ao focar */
 }
 
+/* Estilo para todas as imagens */
 img {
-    width: 5rem;
-    border-radius: 5px;
+    width: 5rem;              /* Largura fixa relativa ao tamanho da fonte */
+    border-radius: 5px;       /* Cantos arredondados nas imagens */
 }
 
+/* Estilo para todas as tabelas */
 table {
-    width: 100%;
-    border-collapse: collapse;
+    width: 100%;              /* Tabela ocupa toda a largura disponível */
+    border-collapse: collapse;/* Une as bordas das células, removendo espaços entre elas */
 }
 
+/* Cabeçalho da tabela */
 th {
-    background-color: #CCD595;
-    color: #331F19;
-    padding: 1rem;
+    background-color: #CCD595;/* Fundo verde claro no cabeçalho */
+    color: #331F19;           /* Texto escuro para contraste */
+    padding: 1rem;            /* Espaço interno para melhor leitura */
 }
 
+/* Células comuns da tabela */
 td {
-    color: #331F19;
-    padding: 1rem;
-    text-align: center;
+    color: #331F19;           /* Cor do texto das células */
+    padding: 1rem;            /* Espaço interno nas células */
+    text-align: center;       /* Centraliza o texto dentro das células */
 }
 
+/* Rodapé da tabela */
 tfoot td {
-    background-color: #331F19;
-    color: #F4F0EA;
+    background-color: #331F19;/* Fundo escuro no rodapé da tabela */
+    color: #F4F0EA;           /* Texto claro para contraste */
 }
 
+/* Blocos <details> (área expansível) */
 details {
-    background-color: #CCD595;
-    border-radius: 5px;
-    padding: 1rem;
+    background-color: #CCD595;/* Fundo verde claro */
+    border-radius: 5px;       /* Cantos arredondados */
+    padding: 1rem;            /* Espaço interno */
 }
 
+/* Cabeçalho do details (parte clicável) */
 summary {
-    color: #331F19;
-    margin: 0.5rem;
-    cursor: pointer;
+    color: #331F19;           /* Cor do texto do summary */
+    margin: 0.5rem;           /* Espaço externo ao redor do summary */
+    cursor: pointer;          /* Indica que é clicável */
 }
 
+/* Listas ordenadas */
 ol {
-    margin-left: 1.5rem;
+    margin-left: 1.5rem;      /* Recuo da lista em relação à borda esquerda */
 }
 
+/* Itens da lista ordenada */
 ol li {
-    padding: 0.2rem;
+    padding: 0.2rem;          /* Pequeno espaço interno para separar visualmente os itens */
 }
 
+/* Agrupamento de campos em formulários */
 fieldset {
-    border: 2px solid #CCD595;
-    border-radius: 5px;
-    padding: 1rem;
+    border: 2px solid #CCD595;/* Borda em verde claro */
+    border-radius: 5px;       /* Cantos arredondados */
+    padding: 1rem;            /* Espaço interno ao redor dos elementos do fieldset */
 }
 
+/* Título do fieldset */
 legend {
-    color: #331F19;
-    padding: 0 0.5rem;
+    color: #331F19;           /* Cor do texto da legend */
+    padding: 0 0.5rem;        /* Espaço lateral para não ficar colado na borda do fieldset */
 }
 
+/* Área de texto multilinha */
 textarea {
-    outline: none;
-    border-radius: 5px;
-    border: 2px solid #CCD595;
-    background-color: transparent;
+    outline: none;            /* Remove contorno padrão ao focar */
+    border-radius: 5px;       /* Cantos arredondados */
+    border: 2px solid #CCD595;/* Borda em verde claro */
+    background-color: transparent; /* Fundo transparente */
 }
 
+/* Botões em geral */
 button {
-    background-color: #CCD595;
-    border: none;
-    padding: 0.8rem;
-    color: #331F19;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #CCD595;/* Fundo verde claro */
+    border: none;             /* Sem borda padrão */
+    padding: 0.8rem;          /* Espaço interno para tornar o botão mais confortável */
+    color: #331F19;           /* Cor do texto do botão */
+    border-radius: 5px;       /* Cantos arredondados */
+    cursor: pointer;          /* Cursor de mãozinha ao passar por cima */
 }
 
+/* Rodapé da página */
 footer {
-    background-color: #331F19;
-    padding: 2rem;
-    text-align: center;
+    background-color: #331F19;/* Fundo escuro para o rodapé */
+    padding: 2rem;            /* Espaçamento interno generoso */
+    text-align: center;       /* Centraliza o conteúdo do rodapé */
 }
 
+/* Parágrafos específicos do rodapé */
 .paragrafo-footer {
-    color: #F4F0EA
+    color: #F4F0EA;           /* Cor clara para o texto, contrastando com o fundo escuro */
 }
 
+/* Links dentro do rodapé */
 footer a {
-    text-decoration: none;
-    color: #CCD595;
+    text-decoration: none;    /* Remove o sublinhado padrão dos links */
+    color: #CCD595;           /* Cor dos links em verde claro */
 }
